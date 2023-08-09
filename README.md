@@ -91,5 +91,3 @@ Contributions are welcome! Fork the repository, create a branch, and submit a pu
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-
-Feel free to customize this README according to your project's specifics. Good luck with your IoT Shrimp Farm Monitoring Project!
