@@ -23,7 +23,7 @@ The IoT Shrimp Farm Monitoring Project is aimed at developing a comprehensive sy
 
 The cultivation of Vannamei shrimp requires meticulous monitoring of environmental parameters to ensure optimal growth and health. This IoT project integrates sensors, microcontrollers, and software to provide a comprehensive solution for data collection, processing, storage, and visualization.
 
-![Mockup](Mockup/Mockup_Aquanotes_6.png)
+![Mockup](Mockup/Mockup_Aquanotes.png)
 
 ## Components
 
