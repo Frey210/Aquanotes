@@ -1,5 +1,5 @@
 
-# IoT Shrimp Farm Monitoring Project
+# AQUANOTES (IoT Shrimp Farm Monitoring Project)
 
 ## Project Overview
 
