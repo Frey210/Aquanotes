@@ -81,7 +81,7 @@ void loop() {
   Mq137_Sensor_Read();
   
   Serial.print(DallTemperature); Serial.print(",");
-  Serial.print(String(readDO(ADC_Voltage, Temperaturet))); Serial.print(",");
+  Serial.print(String(readDO(ADC_Voltage, Temperaturet)/1000)); Serial.print(",");
   Serial.print(tdsValue, 0); Serial.print(",");
   Serial.print(phValue, 2); Serial.print(",");
   Serial.print(suhu); Serial.print(",");
