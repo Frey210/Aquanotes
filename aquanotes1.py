@@ -3,11 +3,11 @@ import time
 import requests
 
 # Konfigurasi koneksi serial dengan Arduino
-ser = serial.Serial('/dev/ttyACM0', 115200)  # Ganti '/dev/ttyACM0' sesuai dengan port Arduino
+ser = serial.Serial('/dev/ttyACM1', 115200)  # Ganti '/dev/ttyACM0' sesuai dengan port Arduino
 time_delay = 300  # 5 menit dalam detik
 
 def send_sensor_data(data):
-    url = "http://localhost/aquanotes/store_data.php"
+    url = "http://kedaireka.simnasfikpunhas.com/device_1/store_data.php"
     response = requests.get(url, params=data)
     if response.status_code == 200:
         print("Data berhasil dikirim ke database")
@@ -23,8 +23,8 @@ try:
                 water_temp = data_list[0]
                 do_value = data_list[1]
                 tds_value = data_list[2]
-                air_temp = data_list[3]
-                ph_value = data_list[4]
+                ph_value = data_list[3]
+                air_temp = data_list[4]
                 ammonia_value = data_list[5]
                 
                 data_to_send = {
