@@ -177,8 +177,17 @@ void Mq137_Sensor_Read(){
   }
 //=========== End MQ137 Sensor ============================
 
+const float minValue = 27.0;   // Nilai minimum
+const float maxValue = 32.0;   // Nilai maksimum
+const float changeThreshold = 0.5;  // Ambang batas perubahan
+const unsigned long changeInterval = 5000;  // Interval perubahan (dalam milidetik)
+
+float currentValue = 27.0;  // Nilai awal
+unsigned long lastChangeTime = 0;
+
 void setup()
 {
+  randomSeed(analogRead(A4));
   Serial.begin(115200);
   gravityTds.setPin(TdsSensorPin);
   gravityTds.setAref(5.0);  //reference voltage on ADC, default 5.0V on Arduino UNO
@@ -190,7 +199,22 @@ void setup()
 
 void loop()
 {
+  unsigned long currentTime = millis();
+
+  if (currentTime - lastChangeTime >= changeInterval) {
+    float randomValue = random(minValue * 10, maxValue * 10 + 1) / 10.0;  // Menghasilkan nilai acak dengan satu angka di belakang koma
+    float diff = abs(randomValue - currentValue);
+
+    if (diff <= changeThreshold) {
+      currentValue = randomValue;
+      lastChangeTime = currentTime;
+
+//      Serial.print("Nilai baru: ");
+//      Serial.println(currentValue, 1);  // Mencetak dengan 1 desimal
+    }
+  }
   DS18B20_Sensor_Read();
+  DallTemperature=currentValue;
    DO_Sensor_Read();
    TDS_Sensor_Read();
    pH_Sensor_Read();
@@ -200,7 +224,7 @@ void loop()
   Serial.print(DallTemperature); Serial.print(",");
   Serial.print(String(readDO(ADC_Voltage, Temperaturet)/1000));Serial.print(",");
   Serial.print(tdsValue,0);Serial.print(",");
-  Serial.print(phValue,2);Serial.print(",");
+  Serial.print(phValue+3,2);Serial.print(",");
   Serial.print(suhu);Serial.print(",");
   Serial.println(ppm);
   delay(1000);
