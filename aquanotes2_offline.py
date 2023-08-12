@@ -31,9 +31,18 @@ def save_to_csv(data):
         print("Data disimpan dalam file CSV")
 
 try:
+    buffer_reset_interval = 300  # Reset buffer setiap 5 menit
+    last_buffer_reset_time = datetime.now()
+
     while True:
         arduino_data = ser.readline().decode().strip()
         current_time = datetime.now()
+
+        # Reset buffer secara berkala
+        if (current_time - last_buffer_reset_time) > timedelta(seconds=buffer_reset_interval):
+            ser.reset_input_buffer()  # Reset buffer input
+            last_buffer_reset_time = current_time
+
         if current_time.minute % 5 == 0:  # Mengirim data setiap 5 menit
             if arduino_data:
                 print("Data dari Arduino:", arduino_data)
@@ -67,3 +76,4 @@ try:
 except KeyboardInterrupt:
     print("Program dihentikan oleh pengguna")
     ser.close()
+                        
