@@ -3,10 +3,10 @@ import time
 import requests
 import csv
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # Konfigurasi koneksi serial dengan Arduino
-ser = serial.Serial('/dev/ttyACM1', 115200)  # Ganti '/dev/ttyACM0' sesuai dengan port Arduino
+ser = serial.Serial('/dev/ttyACM1', 115200, timeout=5)  # Menambahkan timeout
 csv_filename = "sensor_data.csv"
 csv_headers = ["water_temperature", "do", "tds", "ph", "air_temperature", "amonia"]
 
@@ -56,7 +56,9 @@ try:
                             "amonia": ammonia_value
                         }
 
-                        if not send_sensor_data(data_to_send):
+                        if send_sensor_data(data_to_send):
+                            print("Update berhasil pada:", datetime.now())
+                        else:
                             save_to_csv(data_to_send)
                     except ValueError:
                         print("Data dari Arduino tidak sesuai format")
