@@ -11,7 +11,7 @@ csv_filename = "sensor_data.csv"
 csv_headers = ["water_temperature", "do", "tds", "ph", "air_temperature", "amonia"]
 
 def send_sensor_data(data):
-    url = "http://kedaireka.simnasfikpunhas.com/device_1/store_data.php"
+    url = "http://aquanotes.id/device_1/store_data.php"
     try:
         response = requests.get(url, params=data)
         response.raise_for_status()  # Raises an exception for bad responses (4xx and 5xx)
