@@ -75,7 +75,7 @@ if __name__ == '__main__':
                         except ValueError:
                             print("Data dari Arduino tidak sesuai format")
                 ser.reset_input_buffer()  # Reset buffer input
-            # time.sleep(60)  # Cek setiap 1 menit
+            time.sleep(60)  # Cek setiap 1 menit
 
     except KeyboardInterrupt:
         print("Program dihentikan oleh pengguna")
