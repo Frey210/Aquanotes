@@ -37,7 +37,7 @@ The cultivation of Vannamei shrimp requires meticulous monitoring of environment
 
 The project architecture involves three main stages: data collection, data processing, and data visualization.
 
-![System Architecture](architecture_diagram.png)
+![System Architecture](Mockup/Aquanotes_Skematik.png)
 
 ## Data Flow
 
