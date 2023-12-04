@@ -1,0 +1,103 @@
+**ENGLISH VERSION**
+
+---
+
+**PRIVACY POLICY AQUANOTES**
+
+**Last Updated: December 4, 2023**
+
+The AQUANOTES application ("We," "Us," or "Application") is a monitoring data display app for Internet of Things (IoT) devices developed by AiroSky.EPI. The application is designed to monitor water parameters in aquaculture ponds and allows users to download data summaries from the IoT system database.
+
+### Information We Collect
+
+**Aquaculture Pond Monitoring Data:**
+The AQUANOTES app collects and displays monitoring data obtained from IoT devices. This includes water parameters such as temperature, pH, and oxygen levels.
+
+**User Information:**
+We may collect user personal information, such as name, email address, and other account information required for app usage.
+
+### Use of Information
+
+**Data Display:**
+Information collected from IoT devices is used to display aquaculture pond monitoring data to users.
+
+**Service Improvement:**
+User data may be used to enhance the quality of AQUANOTES services, including the development of new features and security improvements.
+
+**User Communication:**
+We may use user information to send updates, notifications, and service-related information.
+
+### Sharing Information with Third Parties
+
+We do not share user personal information with third parties without user consent, except when required by law.
+
+### Security
+
+We are committed to maintaining the security of user information. We implement appropriate security measures to protect data from unauthorized access or alteration.
+
+### User Rights
+
+Users have the right to access, update, or delete their personal information stored by AQUANOTES. To do so, users can contact us at airoskystartup@gmail.com.
+
+### Changes to Privacy Policy
+
+We may update this Privacy Policy in line with service or legal changes. Significant changes will be communicated to users through app updates or direct contact.
+
+### Contact Us
+
+For questions or suggestions regarding this Privacy Policy, please contact us at airoskystartup@gmail.com.
+
+By downloading and using AQUANOTES, you agree to this Privacy Policy.
+
+---
+
+**INDONESIAN VERSION**
+
+---
+
+**KEBIJAKAN PRIVASI AQUANOTES**
+
+**Terakhir Diperbarui: 4 Desember 2023**
+
+Aplikasi AQUANOTES ("Kami," "Kita," atau "Aplikasi") adalah aplikasi penampil data monitoring untuk perangkat Internet of Things (IoT) yang dikembangkan oleh AiroSky.EPI. Aplikasi ini dirancang untuk memonitor parameter air di kolam budidaya dan memungkinkan pengguna untuk mengunduh ringkasan data dari database sistem IoT.
+
+### Informasi yang Kami Kumpulkan
+
+**Data Monitoring Kolam Budidaya:**
+Aplikasi AQUANOTES mengumpulkan dan menampilkan data monitoring yang diperoleh dari perangkat IoT. Ini termasuk parameter air seperti suhu, pH, dan tingkat oksigen.
+
+**Informasi Pengguna:**
+Kami dapat mengumpulkan informasi pribadi pengguna, seperti nama, alamat email, dan informasi akun lainnya yang diperlukan untuk penggunaan aplikasi.
+
+### Penggunaan Informasi
+
+**Penampilan Data:**
+Informasi yang dikumpulkan dari perangkat IoT digunakan untuk menampilkan data monitoring kolam budidaya kepada pengguna.
+
+**Peningkatan Layanan:**
+Data pengguna dapat digunakan untuk meningkatkan kualitas layanan AQUANOTES, termasuk pengembangan fitur baru dan peningkatan keamanan.
+
+**Kontak Pengguna:**
+Kami dapat menggunakan informasi pengguna untuk mengirim pembaruan, pemberitahuan, dan informasi terkait layanan.
+
+### Bagikan Informasi ke Pihak Ketiga
+
+Kami tidak membagikan informasi pribadi pengguna ke pihak ketiga tanpa izin pengguna, kecuali jika diwajibkan oleh hukum.
+
+### Keamanan
+
+Kami berkomitmen untuk menjaga keamanan informasi pengguna. Kami menerapkan langkah-langkah keamanan yang sesuai untuk melindungi data dari akses yang tidak sah atau perubahan.
+
+### Hak Pengguna
+
+Pengguna memiliki hak untuk mengakses, memperbarui, atau menghapus informasi pribadi mereka yang disimpan oleh AQUANOTES. Untuk melakukan ini, pengguna dapat menghubungi kami di airoskystartup@gmail.com.
+
+### Perubahan pada Kebijakan Privasi
+
+Kami dapat memperbarui Kebijakan Privasi ini sesuai dengan perubahan layanan atau hukum yang berlaku. Perubahan signifikan akan diinformasikan kepada pengguna melalui pembaruan aplikasi atau kontak langsung.
+
+### Kontak Kami
+
+Jika Anda memiliki pertanyaan atau saran tentang Kebijakan Privasi ini, silakan hubungi kami di airoskystartup@gmail.com.
+
+Dengan mengunduh dan menggunakan AQUANOTES, Anda setuju dengan Kebijakan Privasi ini.
