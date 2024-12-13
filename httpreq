@@ -1,0 +1,33 @@
+import serial
+import requests
+
+# Serial configuration
+SERIAL_PORT = 'COM3'  # Ganti sesuai dengan port Arduino
+BAUD_RATE = 9600
+
+# Server URL
+SERVER_URL = "http://aquanotes.aerasea.tech/web/device_1/store_data.php"
+
+def send_data_to_server(data):
+    try:
+        response = requests.get(SERVER_URL, params=data)
+        print("Server Response:", response.status_code, response.text)
+    except Exception as e:
+        print("Error sending data:", e)
+
+def main():
+    ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)
+    print("Listening to Serial...")
+    while True:
+        if ser.in_waiting > 0:
+            raw_data = ser.readline().decode().strip()
+            print("Received:", raw_data)
+            try:
+                # Parse data
+                params = dict(x.split('=') for x in raw_data.split('&'))
+                send_data_to_server(params)
+            except Exception as e:
+                print("Error parsing data:", e)
+
+if __name__ == "__main__":
+    main()
